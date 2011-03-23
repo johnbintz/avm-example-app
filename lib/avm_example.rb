@@ -11,7 +11,7 @@ class AVMExample < Sinatra::Base
     :expire_after => 60
 
   configure do
-    set :root, File.dirname(__FILE__)
+    set :root, File.expand_path('../..',  __FILE__)
   end
   
   register Sinatra::Flash
