@@ -10,7 +10,9 @@ class AVMExample < Sinatra::Base
     :path => '/',
     :expire_after => 60
 
-  set :root, File.dirname(__FILE__)
+  configure do
+    set :root, File.dirname(__FILE__)
+  end
   
   register Sinatra::Flash
   helpers Sinatra::ContentFor
