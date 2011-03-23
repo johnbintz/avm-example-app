@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'ruby-avm-library', :git => 'git@github.com:johnbintz/ruby-avm-library.git'
+gem 'ruby-avm-library', :git => 'git://github.com/johnbintz/ruby-avm-library.git'
 #gem 'ruby-avm-library', :path => '../ruby-avm-library'
 gem 'sinatra'
 gem 'haml'
