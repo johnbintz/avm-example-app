@@ -10,8 +10,9 @@ GIT
       selenium-webdriver (>= 0.0.27)
       xpath (~> 0.1.3)
 
-PATH
-  remote: ../ruby-avm-library
+GIT
+  remote: git@github.com:johnbintz/ruby-avm-library.git
+  revision: b703ee1a550c8640fca5f2667c2883cb5f31c5f1
   specs:
     ruby-avm-library (0.0.1)
       nokogiri
