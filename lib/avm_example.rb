@@ -44,7 +44,7 @@ class AVMExample < Sinatra::Base
     haml :print_data
   end
 
-  get %r{/?} do
+  get %r{^/?$} do
     haml :index
   end
 
