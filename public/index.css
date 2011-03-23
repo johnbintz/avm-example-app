@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* line 3, ../sass/index.scss */
+body {
+  background-color: #bbb;
+}
+
+/* line 7, ../sass/index.scss */
+pre {
+  border: solid #333 1px;
+  background-color: #222;
+  padding: 10px;
+  overflow: auto;
+  color: #ddd;
+}
+/* line 14, ../sass/index.scss */
+pre .sy {
+  color: #a40;
+}
+/* line 15, ../sass/index.scss */
+pre .dl {
+  color: #0c7;
+}
+/* line 16, ../sass/index.scss */
+pre .k {
+  color: #970;
+}
+/* line 17, ../sass/index.scss */
+pre .co, pre .i {
+  color: #05c;
+}
+/* line 18, ../sass/index.scss */
+pre .fl {
+  color: #3c1;
+}
+
+/* line 21, ../sass/index.scss */
+#container {
+  width: 30%;
+  margin: 10% auto;
+  text-align: center;
+  border: solid #555 1px;
+  padding: 50px;
+  -moz-box-shadow: 0 0 10px 10px #ccccdd;
+  -webkit-box-shadow: 0 0 10px 10px #ccccdd;
+  -o-box-shadow: 0 0 10px 10px #ccccdd;
+  box-shadow: 0 0 10px 10px #ccccdd;
+  background-color: #f0f0f0;
+}
+/* line 30, ../sass/index.scss */
+#container h2 {
+  margin: 0 0 10px;
+}
+/* line 34, ../sass/index.scss */
+#container .flash {
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px 0;
+  padding: 3px 0;
+}
+/* line 42, ../sass/index.scss */
+#container .flash#warning {
+  color: #a00;
+  font-weight: bold;
+}
+/* line 47, ../sass/index.scss */
+#container .flash#info {
+  color: #363;
+}
+
+/* line 53, ../sass/index.scss */
+#footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  color: #555;
+}

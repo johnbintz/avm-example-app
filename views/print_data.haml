@@ -1,0 +1,4 @@
+- content_for :data do
+  %pre= CodeRay.scan(@image.to_h.pretty_inspect, :ruby).html
+
+= haml :index

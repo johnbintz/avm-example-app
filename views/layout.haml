@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title AVM Test
+    %link{:rel => :stylesheet, :href => 'index.css', :type => 'text/css'}
+  %body
+    #container
+      - if flash[:warn]
+        .flash#warning= flash[:warn]
+      - if flash[:info]
+        .flash#info= flash[:info]
+      = yield
+    %a{:name => "data"}
+    #data
+      = yield_content :data
+    #footer
+      Example usage application for the <a href="http://github.com/johnbintz/ruby-avm-library/">Ruby AVM Library</a>. <a href="https://github.com/johnbintz/avm-example-app/">Get the source</a>.
