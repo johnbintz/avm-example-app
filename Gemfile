@@ -1,7 +1,6 @@
 source :rubygems
 
 gem 'ruby-avm-library', :git => 'git://github.com/johnbintz/ruby-avm-library.git'
-#gem 'ruby-avm-library', :path => '../ruby-avm-library'
 gem 'sinatra'
 gem 'haml'
 gem 'sinatra-flash'
@@ -14,5 +13,7 @@ group :development do
   gem 'autotest'
   gem 'rspec'
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'capybara-zombie', :git => 'https://github.com/plataformatec/capybara-zombie.git'
+  gem 'yajl-ruby'
 end
 

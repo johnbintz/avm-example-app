@@ -4,6 +4,7 @@ require 'sinatra/content_for'
 require 'avm/image'
 require 'coderay'
 require 'pp'
+require 'base64'
 
 class AVMExample < Sinatra::Base
   use Rack::Session::Cookie, :key => 'avm.session',
@@ -36,8 +37,13 @@ class AVMExample < Sinatra::Base
   post '/upload' do
     redirect_with_warn("No file provided!") if !uploaded?
 
+    data = params[:file][:tempfile].read
+    if settings.environment == :test
+      data = Base64.decode64(data) 
+    end
+
     begin
-      @image = AVM::Image.from_xml(params[:file][:tempfile].read)
+      @image = AVM::Image.from_xml(data)
       redirect_with_warn("Bad XMP file!") if !@image.valid?
     rescue StandardError => e
       redirect_with_warn("Error reading XMP file!")

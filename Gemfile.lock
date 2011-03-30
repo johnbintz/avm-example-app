@@ -12,11 +12,20 @@ GIT
 
 GIT
   remote: git://github.com/johnbintz/ruby-avm-library.git
-  revision: b703ee1a550c8640fca5f2667c2883cb5f31c5f1
+  revision: 864b3c2417cb61d52dc9299f1750024285504768
   specs:
-    ruby-avm-library (0.0.1)
+    ruby-avm-library (0.0.2)
       nokogiri
       thor
+
+GIT
+  remote: https://github.com/plataformatec/capybara-zombie.git
+  revision: a94e87adc7bfe1dc537b457a1b3bb14ab90abe91
+  specs:
+    capybara-zombie (0.0.1)
+      capybara (~> 0.4.1)
+      childprocess (~> 0.1.7)
+      multi_json (~> 0.0.5)
 
 GEM
   remote: http://rubygems.org/
@@ -34,6 +43,7 @@ GEM
     json_pure (1.5.1)
     mime-types (1.16)
     mocha (0.9.12)
+    multi_json (0.0.5)
     nokogiri (1.4.4)
     rack (1.2.2)
     rack-test (0.5.7)
@@ -66,6 +76,7 @@ GEM
     tilt (1.2.2)
     xpath (0.1.3)
       nokogiri (~> 1.3)
+    yajl-ruby (0.7.7)
 
 PLATFORMS
   ruby
@@ -73,6 +84,7 @@ PLATFORMS
 DEPENDENCIES
   autotest
   capybara!
+  capybara-zombie!
   coderay
   haml
   mocha
@@ -82,3 +94,4 @@ DEPENDENCIES
   sinatra
   sinatra-content-for
   sinatra-flash
+  yajl-ruby
